@@ -9,10 +9,14 @@
   .center-div{
     position: absolute;
     margin: auto;
-    top: 100px;
+    top: 10%;
     right: 0;
-    bottom: 0;
+    bottom: 10%;
     left: 0;
+    width: 100%;
+    height: 80%;
+    background-color: #fff;
+    border-radius: 3px;
     text-align: center;
   }
   .close-button {
@@ -24,6 +28,14 @@
     right: 2vh;
     height: 5%;
   }
+  .text {
+      position: fixed;
+      margin: auto;
+      width: 100%;
+      top: 50%;
+      text-align: center;
+      color: #c448a8;
+    }
   </style>
 </head>
 <body background="img/overlay.png">
@@ -31,7 +43,7 @@
     <img src="img/close_button.png" alt="X" id="close">
   </div>
   <div class="center-div">
-      <h1 style="color: #c448a8;">Symptoms</h1>
+      <h1 class="text">Symptoms</h1>
     </div>
 <script>
   $("#close").click(function(){
