@@ -8,16 +8,19 @@
   <style>
   .center-div{
     position: absolute;
-    margin: auto;
-    top: 10%;
+    margin: 0% 1% 0% 1%;
+    top: 8%;
     right: 0;
-    bottom: 10%;
-    left: 0;
-    width: 100%;
-    height: 80%;
+    bottom: 8%;
+    left: -1px;
+    width: 98%;
+    height: 84%;
     background-color: #fff;
-    border-radius: 3px;
+    border-style: solid;
+    border-radius: 1px;
+    border-color: #c448a8;
     text-align: center;
+    border-width: 2px;
   }
   .close-button {
     float: right;
@@ -26,7 +29,7 @@
     position: absolute;
     top: 10px;
     right: 2vh;
-    height: 5%;
+    height: 10%;
   }
   .text {
       position: fixed;
@@ -34,17 +37,17 @@
       width: 100%;
       top: 50%;
       text-align: center;
-      color: #c448a8;
     }
   </style>
 </head>
 <body background="img/overlay.png">
-  <div class="close-button">
-    <img src="img/close_button.png" alt="X" id="close">
-  </div>
   <div class="center-div">
+      <div class="close-button">
+        <img src="img/close_button.png" alt="X" id="close">
+      </div>
       <h1 class="text">Symptoms</h1>
     </div>
+
 <script>
   $("#close").click(function(){
     Q(function(){
